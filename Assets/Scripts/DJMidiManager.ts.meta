@@ -1,0 +1,71 @@
+- !<AssetImportMetadata/8f7e339f-736c-4a33-aab1-2145a2b0a995>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6aa3fcf5-46db-4994-8ba5-549a1f85b1ff
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6aa3fcf5-46db-4994-8ba5-549a1f85b1ff
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1b8db49f-78ae-4c71-90f8-8b55cdca0ccf
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1b8db49f-78ae-4c71-90f8-8b55cdca0ccf>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0cd4e6ce-599a-47ac-9b43-b35e20ccf6e4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bpmLabel: false
+    crossfaderController: false
+    delayBetweenTracks: false
+    genreLabel: false
+    midiButtonsBatch1: false
+    midiButtonsBatch2: false
+    midiButtonsBatch3: false
+    midiButtonsBatch4: false
+    midiButtonsBatch5: false
+    statusText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - midiButtonsBatch1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      midiButtonsBatch2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      midiButtonsBatch3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      midiButtonsBatch4: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      midiButtonsBatch5: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      statusText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      genreLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      bpmLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      crossfaderController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      delayBetweenTracks: !<float> 2000.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject midiButtonsBatch1 {"hint":"Batch 1: Electronic pads"}'
+    - '// @input SceneObject midiButtonsBatch2 {"hint":"Batch 2: Hip Hop pads"}'
+    - '// @input SceneObject midiButtonsBatch3 {"hint":"Batch 3: Lofi Jazz pads"}'
+    - '// @input SceneObject midiButtonsBatch4 {"hint":"Batch 4: House pads"}'
+    - '// @input SceneObject midiButtonsBatch5 {"hint":"Batch 5: Rock pads"}'
+    - // @input Component.Text statusText
+    - // @input Component.Text genreLabel
+    - // @input Component.Text bpmLabel
+    - '// @input AssignableType crossfaderController {"hint":"CrossfaderController for mixing"}'
+    - '// @input float delayBetweenTracks = 2500 {"hint":"Delay between generating each track (ms)"}'

@@ -1,0 +1,113 @@
+- !<AssetImportMetadata/d6e14bf6-df91-4805-bb77-1319ecd617c4>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 00ea2f04-46e7-4292-ab86-745668651733
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 00ea2f04-46e7-4292-ab86-745668651733
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 9d445307-d296-4b5f-a22d-1d4cc58530f8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/9d445307-d296-4b5f-a22d-1d4cc58530f8>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c6b9abb1-5d26-4b86-96a5-74a0e9db06ea
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audioPositionSlider: false
+    bottomVertex0: false
+    bottomVertex1: false
+    bottomVertex2: false
+    bottomVertex3: false
+    buttonImage: false
+    buttonMoveDistance: false
+    buttonOffTexture: false
+    buttonOnTexture: false
+    closestPointMarker: false
+    colliderObject: false
+    crossfadeSlider: false
+    enableAudioSeeking: false
+    interactorObject1: false
+    interactorObject2: false
+    noteAudioAsset: false
+    noteId: false
+    pressThreshold: false
+    pressableVisual: false
+    resetDuration: false
+    topVertex0: false
+    topVertex1: false
+    topVertex2: false
+    topVertex3: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - colliderObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      crossfadeSlider: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      audioPositionSlider: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      interactorObject1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      interactorObject2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      closestPointMarker: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pressableVisual: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      topVertex0: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      topVertex1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      topVertex2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      topVertex3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bottomVertex0: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bottomVertex1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bottomVertex2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bottomVertex3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pressThreshold: 0.700000
+      resetDuration: !<float> 1.000000
+      buttonMoveDistance: !<float> 5.000000
+      noteAudioAsset: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      buttonOffTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      buttonOnTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      buttonImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      noteId: !<float> 0.000000
+      enableAudioSeeking: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject colliderObject {"hint":"The collider that will detect the soft press interaction"}'
+    - '// @input AssignableType crossfadeSlider {"hint":"SIK Slider component for crossfade control"}'
+    - '// @input AssignableType_1 audioPositionSlider {"hint":"SIK Slider component for audio position/seek control"}'
+    - '// @input SceneObject interactorObject1 {"hint":"First interactor object (e.g., left hand finger tip)"}'
+    - '// @input SceneObject interactorObject2 {"hint":"Second interactor object (e.g., right hand finger tip)"}'
+    - '// @input SceneObject closestPointMarker {"hint":"Optional: A SceneObject to visually mark the closest point on the line (for debugging)"}'
+    - '// @input SceneObject pressableVisual {"hint":"The 3D SceneObject that will move based on press detection (your button mesh)"}'
+    - '// @input SceneObject topVertex0 {"hint":"Top vertex 0 of the collider cube"}'
+    - '// @input SceneObject topVertex1 {"hint":"Top vertex 1 of the collider cube"}'
+    - '// @input SceneObject topVertex2 {"hint":"Top vertex 2 of the collider cube"}'
+    - '// @input SceneObject topVertex3 {"hint":"Top vertex 3 of the collider cube"}'
+    - '// @input SceneObject bottomVertex0 {"hint":"Bottom vertex 0 of the collider cube"}'
+    - '// @input SceneObject bottomVertex1 {"hint":"Bottom vertex 1 of the collider cube"}'
+    - '// @input SceneObject bottomVertex2 {"hint":"Bottom vertex 2 of the collider cube"}'
+    - '// @input SceneObject bottomVertex3 {"hint":"Bottom vertex 3 of the collider cube"}'
+    - '// @input float pressThreshold = 0.7 {"hint":"The threshold for triggering the press event (0 to 1)"}'
+    - '// @input float resetDuration = 1 {"hint":"Time (in seconds) for the press value to smoothly reset to 0 after exit"}'
+    - '// @input float buttonMoveDistance = 5 {"hint":"Vertical movement distance for button press animation (in local units)"}'
+    - '// @input Asset.AudioTrackAsset noteAudioAsset {"hint":"Audio asset to play when the button is pressed"}'
+    - '// @input Asset.Texture buttonOffTexture {"hint":"The image texture for the button when OFF (inactive)"}'
+    - '// @input Asset.Texture buttonOnTexture {"hint":"The image texture for the button when ON (active)"}'
+    - "// @input Component.Image buttonImage {\"hint\":\"Reference to the button's image component\"}"
+    - '// @input float noteId {"hint":"Note ID or MIDI number for this button"}'
+    - '// @input bool enableAudioSeeking = true {"hint":"Enable audio position slider control for this button"}'
